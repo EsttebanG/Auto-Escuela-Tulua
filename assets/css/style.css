@@ -1,0 +1,443 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Color de texto predeterminado */
+}
+
+/* Estilos para el header */
+header {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    width: 97%;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Estilos para el logo de la página */
+#logoPagina {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilos para el título */
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilos para los enlaces */
+i {
+    margin-left: 10px;
+}
+
+i a {
+    text-decoration: none;
+    color: #333333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+i a:hover {
+    background-color: #ffc107; /* Amarillo claro al pasar el ratón */
+    color: #ffffff; /* Texto blanco al pasar el ratón */
+}
+
+/* Estilos para la línea divisoria */
+hr {
+    margin-top: 10px;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+/* Estilos para la navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #080808;
+}
+
+/* Estilos para la sección principal */
+section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+/* Estilos para la sección contenido */
+.contenido {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo para el botón de WhatsApp */
+#botonWhatsApp {
+    width: 60px; /* Ancho del botón */
+    height: auto; /* Altura automática */
+    position: fixed; /* Posición fija */
+    bottom: 20px; /* Distancia desde abajo */
+    right: 20px; /* Distancia desde la derecha */
+    z-index: 999; /* Índice z para estar por encima de otros elementos */
+    border: none; /* Sin borde */
+    background-color: transparent; /* Fondo transparente */
+    cursor: pointer; /* Cursor de tipo puntero */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+}
+
+#botonWhatsApp:hover {
+    opacity: 0.8; /* Opacidad al pasar el cursor */
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #ffeeba; /* Fondo amarillo claro */
+    color: black; /* Texto negro */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de tipo puntero */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #ffc107; /* Fondo amarillo al pasar el cursor */
+}
+
+/* Estilos para los productos */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.producto h2 {
+    color: #333;
+}
+
+.producto p {
+    color: #666;
+}
+
+/* Estilos para los botones en la sección principal */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Amarillo claro */
+    color: #000; /* Texto negro */
+    text-decoration: none;
+    border: 1px solid #ffcc00; /* Borde del mismo color que el fondo */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: #ffdb4d; /* Amarillo más claro al pasar el ratón */
+    color: #000; /* Texto negro */
+}
+
+/* Estilos para centrar el contenido de la sección */
+section {
+    text-align: center;
+    margin: 50px auto; /* Margen superior e inferior de 50px y centrado horizontal */
+    max-width: 800px; /* Ancho máximo del contenido */
+}
+
+h2 {
+    color: #333; /* Color del título */
+    font-size: 24px; /* Tamaño de fuente del título */
+}
+
+p {
+    color: #666; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    line-height: 1.6; /* Altura de línea para un mejor espaciado */
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.contenedor-formulario {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.formulario {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.enlace-contrasena {
+    margin-bottom: 20px;
+}
+
+.enlace-contrasena a {
+    color: #333;
+    text-decoration: none;
+}
+
+.enlace-contrasena a:hover {
+    text-decoration: underline;
+}
+
+.boton {
+    background-color: #ffc107; /* Amarillo claro */
+    color: #000; /* Texto negro */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de tipo puntero */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.boton:hover {
+    background-color: #ffdb4d; /* Amarillo más claro al pasar el ratón */
+}
+
+/* Estilos para botones */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Amarillo claro */
+    color: #000; /* Texto negro */
+    text-decoration: none;
+    border: 1px solid #ffcc00; /* Borde del mismo color que el fondo */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: #ffdb4d; /* Amarillo más claro al pasar el ratón */
+    color: #000; /* Texto negro */
+}
+
+.boton-pagar {
+    background-color: #ffcc00; /* Amarillo claro */
+    color: #000; /* Texto negro */
+    border: 1px solid #ffcc00; /* Borde del mismo color que el fondo */
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-pagar:hover {
+    background-color: #ffdb4d; /* Amarillo más claro al pasar el ratón */
+    color: #000; /* Texto negro */
+}
+
+/* Estilos CSS */
+.container {
+    display: flex; /* Utilizamos flexbox para crear el diseño de tres columnas */
+    justify-content: space-between; /* Distribuye las columnas de manera uniforme */
+    padding: 20px; /* Espaciado interior */
+}
+.column {
+    flex: 1; /* Cada columna ocupará el mismo espacio */
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 20px; /* Espaciado interior */
+    margin: 0 10px; /* Margen entre columnas */
+    border-radius: 5px; /* Bordes redondeados */
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.boton {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-profile input[type="file"] {
+    display: none;
+}
+
+.user-details p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media query para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .user-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-profile img {
+        margin: 0 auto 20px auto;
+    }
+}
+
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dddfeb;
+    border-radius: .35rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+} 
+
+.alinear-centro-v {
+    display: flex;
+    align-items: center;
+}
+
+.alinear-centro-h {
+    display: flex;
+    justify-content: center;
+}
+
+.border-edit-black {
+    border: 1px solid black;
+}
+
+.alinear-centro-t {
+    display: flex;
+    text-align: center;
+}
+
+.alinear-centro-hvt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.alinear-centro-hv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
