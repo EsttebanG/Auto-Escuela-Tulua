@@ -1,0 +1,22 @@
+name: Despliegue de sitio web PHP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4' # Cambia a la versión de PHP que necesites
+
+      - name: Ejecutar script PHP
+        run: php .
