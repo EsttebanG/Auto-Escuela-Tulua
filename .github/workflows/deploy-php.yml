@@ -19,7 +19,7 @@ jobs:
           php-version: '7.4'  # Cambia la versión de PHP según tus necesidades
 
       - name: Build your PHP files
-        run: php index.php  # Cambia esto al comando que compila tus archivos PHP
+        run: php .  # Cambia esto al comando que compila tus archivos PHP
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
