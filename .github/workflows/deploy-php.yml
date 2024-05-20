@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Publicar Página Web con PHP
 
 on:
   push:
@@ -6,23 +6,39 @@ on:
       - main  # Cambia esto al nombre de tu rama principal
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout código
         uses: actions/checkout@v2
 
-      - name: Set up PHP
+      - name: Configurar PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '7.4'  # Cambia la versión de PHP según tus necesidades
+          php-version: '7.4'  # Cambia a la versión de PHP que necesites
 
-      - name: Build your PHP files
-        run: php .  # Cambia esto al comando que compila tus archivos PHP
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Publicar sitio web
+        uses: actions/upload-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .  # Cambia esto a la carpeta donde se generan los archivos PHP
+          name: sitio-web
+          path: .  # Cambia al directorio donde se encuentra tu sitio web compilado
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar sitio web
+        uses: actions/download-artifact@v2
+        with:
+          name: sitio-web
+
+      - name: Desplegar en GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifact-name: sitio-web
+          pages: write
+          id-token: write
+          environment: github-pages
