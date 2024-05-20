@@ -1,0 +1,36 @@
+name: Implementar página web en GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v4
+        with:
+          php-version: '8.1' # Especifica la versión de PHP deseada
+          extensions: mbstring, sodium # Especifica las extensiones de PHP necesarias (opcional)
+
+      - name: Install dependencies
+        run: |
+          composer install
+
+      - name: Build the project
+        run: |
+          make build
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-github-pages@v7
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          directory: /
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
