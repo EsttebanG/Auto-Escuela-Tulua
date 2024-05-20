@@ -1,0 +1,28 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Cambia esto al nombre de tu rama principal
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'  # Cambia a la versión de PHP que estás utilizando
+
+      - name: Build site
+        run: php .  # Cambia a tu comando de compilación
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .  # Cambia al directorio donde se encuentran los archivos estáticos generados
