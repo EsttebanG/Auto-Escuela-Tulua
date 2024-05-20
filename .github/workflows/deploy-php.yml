@@ -1,22 +1,28 @@
-name: Despliegue de sitio web PHP
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main  # Cambia esto al nombre de tu rama principal
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Configurar PHP
+      - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '7.4' # Cambia a la versión de PHP que necesites
+          php-version: '7.4'  # Cambia la versión de PHP según tus necesidades
 
-      - name: Ejecutar script PHP
-        run: php .
+      - name: Build your PHP files
+        run: php index.php  # Cambia esto al comando que compila tus archivos PHP
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .  # Cambia esto a la carpeta donde se generan los archivos PHP
