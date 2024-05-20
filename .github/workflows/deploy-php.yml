@@ -27,10 +27,10 @@ jobs:
           make build
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-github-pages@v7
+        uses: actions/deploy-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          directory: /
+          directory: public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
