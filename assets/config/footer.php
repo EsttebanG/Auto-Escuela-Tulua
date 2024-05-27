@@ -4,7 +4,7 @@
                 <h3>Nuestro Respaldo</h3>
                 <img id="Iconte" src="/Auto-Escuela-Tulua/img/Iconte.png" alt="Iconte">
                 <img id="VigiladoSuperTransporte" src="/Auto-Escuela-Tulua/img/VigiladoSuperTransporte.png" alt="VigiladoSuperTransporte">
-                <img id="Transporte" src="img/Transporte.png" alt="Transporte">
+                <img id="Transporte" src="/Auto-Escuela-Tulua/img/Transporte.png" alt="Transporte">
             </div>
             <hr>
             <div class="footer-section">
