@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("assets/config/header.php"); ?>
+    <?php include("../../assets/config/header.php"); ?>
     <section class="contenido">
         <h2>Seleccione el Servicio a Pagar</h2>
         <form action="#" method="POST" class="formulario">

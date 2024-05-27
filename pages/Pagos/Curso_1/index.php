@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("assets/config/header.php"); ?>
+    <?php include("../../assets/config/header.php"); ?>
     <p>
     <h2>Pago del Curso - Automóvil y/o camioneta particular</h2>
     </p>

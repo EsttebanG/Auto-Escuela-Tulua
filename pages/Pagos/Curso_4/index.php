@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("assets/config/header.php"); ?>
+    <?php include("../../assets/config/header.php"); ?>
     <section>
         <h2>Pago del Curso - Automovil y moto <p></p> B1 y A1 o B1 y A2</h2>
         <div class="producto">

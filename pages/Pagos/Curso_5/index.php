@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("assets/config/header.php"); ?>
+    <?php include("../../assets/config/header.php"); ?>
     <section>
         <h2>Pago del Curso - Autoservicio Publico - C1</h2>
         <div class="producto">

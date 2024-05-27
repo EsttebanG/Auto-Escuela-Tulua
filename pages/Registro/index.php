@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("assets/config/header.php"); ?>
+    <?php include("../../assets/config/header.php"); ?>
     <section class="contenedor-formulario">
         <form action="/Auto-Escuela-Tulua/pages/Usuarios/" class="formulario">
             <div class="campo">
