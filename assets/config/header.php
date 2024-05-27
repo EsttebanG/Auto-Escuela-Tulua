@@ -5,7 +5,7 @@
                 <img id="logoPagina" src="img/a.png" alt="Logo de la página">
             </a>
             <div class="alinear-centro-hv">
-                <h1>Bienvenido a Auto Escuela Tuluá</h1>
+                <h1>Auto Escuela Tuluá</h1>
             </div>
         </div>
         <hr>
