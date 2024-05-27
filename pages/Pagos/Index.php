@@ -2,11 +2,12 @@
 <html lang="es">
 
 <head>
-    <?php include("../../aseets/config/head.php");?>
+    <?php include("../../assets/config/head.php"); ?>
     <title>Pagos</title>
 </head>
+
 <body>
-<?php include("assets/config/header.php");?>
+    <?php include("assets/config/header.php"); ?>
     <section class="contenido">
         <h2>Seleccione el Servicio a Pagar</h2>
         <form action="#" method="POST" class="formulario">

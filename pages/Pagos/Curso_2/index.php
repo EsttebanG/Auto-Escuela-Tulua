@@ -2,11 +2,12 @@
 <html lang="es">
 
 <head>
-    <?php include("../../aseets/config/head.php");?>
+    <?php include("../../assets/config/head.php"); ?>
     <title>Pagos_Curso_2</title>
 </head>
+
 <body>
-<?php include("assets/config/header.php");?>
+    <?php include("assets/config/header.php"); ?>
     <section>
         <h2>Pago del Curso - Moto - A2
         </h2>
