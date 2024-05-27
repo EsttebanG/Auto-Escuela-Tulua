@@ -2,32 +2,11 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/Auto-Escuela-Tulua/img/a.png" type="image/png">
-    <!-- Icono de la página -->
-    <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/style.css">
+    <?php include("../../aseets/config/head.php");?>
     <title>Iniciar Sesión - Auto Escuela Tuluá</title>
 </head>
-
 <body>
-    <header>
-        <div class="alinear-centro-hv">
-            <a class="alinear-centro-hv" href="/">
-                <img id="logoPagina" src="/Auto-Escuela-Tulua/img/a.png" alt="Logo de la página">
-            </a>
-            <div class="alinear-centro-hv">
-                <h1>Iniciar Sesión</h1>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <div>
-                <i><a class="boton" href="/Auto-Escuela-Tulua/">Volver al Inicio</a></i>
-                <i><a class="boton" href="/Auto-Escuela-Tulua/pages/Registro/">Registrarse</a></i>
-            </div>
-        </div>
-    </header>
+<?php include("assets/config/header.php");?>
     <section>
         <form action="/Auto-Escuela-Tulua/pages/Usuarios/"  class="formulario">
             <div class="campo">

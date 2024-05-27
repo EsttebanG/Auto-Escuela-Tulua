@@ -2,33 +2,11 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Escuela Tuluá - Sedes</title>
-    <link rel="icon" href="/Auto-Escuela-Tulua/img/a.png" type="image/png">
-    <!-- Icono de la página -->
-    <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Escuela Tuluá - Sedes</title>
+    <?php include("../../aseets/config/head.php");?>
+    <title>Sedes</title>
 </head>
 <body>
-    <header>
-        <div class="alinear-centro-hv">
-            <a class="alinear-centro-hv" href="/">
-                <img id="logoPagina" src="/Auto-Escuela-Tulua/img/a.png" alt="Logo de la página">
-            </a>
-            <div class="alinear-centro-hv">
-                <h1>Sedes</h1>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <div>
-                <i><a class="boton" href="/Auto-Escuela-Tulua/">Volver al Inicio</a></i>
-            </div>
-        </div>
-    </header>
+<?php include("assets/config/header.php");?>
     <section>
         <hr>
         <div class="alinear-centro-hv">

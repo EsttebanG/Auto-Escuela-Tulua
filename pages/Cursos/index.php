@@ -2,31 +2,11 @@
 <html lang="es">
 
 <head>
-    <?php include(../../aseets/config/head.php);?>
+    <?php include("../../aseets/config/head.php");?>
     <title>Auto Escuela Tuluá - Cursos</title>
 </head>
 <body>
-    <header>
-        <!-- Imagen del logo al lado izquierdo del título -->
-        <div class="alinear-centro-hv">
-            <a class="alinear-centro-hv" href="/">
-                <img id="logoPagina" src="/Auto-Escuela-Tulua/img/a.png" alt="Logo de la página">
-            </a>
-            <div class="alinear-centro-hv">
-                <h1>Cursos</h1>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <div>
-                <i><a class="boton" href="/Auto-Escuela-Tulua/">Inicio</a></i>
-                <i><a class="boton" href="/Auto-Escuela-Tulua/pages/Cursos/">Cursos</a></i>
-                <i><a class="boton" href="/Auto-Escuela-Tulua/pages/sedes/">Sedes</a></i>
-                <i><a class="boton" href="/Auto-Escuela-Tulua/pages/Inicio_Seccion/">Iniciar Sesión</a></i>
-                <i><a class="boton" href="/Auto-Escuela-Tulua/pages/Registro/">Registrarse</a></i>
-            </div>
-        </div>
-    </header>
+<?php include("../../aseets/config/header.php");?>
     <section>
         <hr>
         <div class="alinear-centro-hv">
