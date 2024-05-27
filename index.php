@@ -43,8 +43,6 @@
             <!-- Columna 1 -->
             <div class="column">
                 <img src="img/CH.png" alt="CH">
-            </div>
-            <div>
                 <h2>Confianza</h2>
                 <p>Primero nuestro compromiso con la vida.</p>
                 <p>Más de 18 años educando personas con responsabilidad.</p>
@@ -53,8 +51,6 @@
             <!-- Columna 2 -->
             <div class="column">
                 <img src="img/ES.png" alt="ES">
-            </div>
-            <div>
                 <h2>Seguridad</h2>
                 <p>Vigilados y legalmente certificados.</p>
                 <p>Más de 2,400 M2 en áreas seguras de aprendizaje.</p>
@@ -63,8 +59,6 @@
             <!-- Columna 3 -->
             <div class="column">
                 <img src="img/BO.png" alt="BO">
-            </div>
-            <div>
                 <h2>Innovación</h2>
                 <p>Énfasis en seguridad vial y cultura ciudadana.</p>
                 <p>Parque automotor moderno y en continua renovación.</p>
