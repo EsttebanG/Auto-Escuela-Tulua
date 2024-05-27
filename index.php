@@ -75,10 +75,10 @@
 
 
     <!-- Botón de WhatsApp -->
-
+<?php include("assets/config/whatsapp.php");?>
     <!-- Botón de WhatsApp fin -->
 
-
+<?php include("assets/config/footer.php");?>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
         <!-- Imagen del logo al lado izquierdo del título -->
         <div class="alinear-centro-hv">
             <a class="alinear-centro-hv" href="/">
-                <img id="logoPagina" src="img/a.png" alt="Logo de la página">
+                <img id="logoPagina" src="/Auto-Escuela-Tulua/img/a.png" alt="Logo de la página">
             </a>
             <div class="alinear-centro-hv">
                 <h1>Auto Escuela Tuluá</h1>

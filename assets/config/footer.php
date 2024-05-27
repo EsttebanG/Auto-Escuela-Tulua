@@ -2,8 +2,8 @@
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Nuestro Respaldo</h3>
-                <img id="Iconte" src="img/Iconte.png" alt="Iconte">
-                <img id="VigiladoSuperTransporte" src="img/VigiladoSuperTransporte.png" alt="VigiladoSuperTransporte">
+                <img id="Iconte" src="/Auto-Escuela-Tulua/img/Iconte.png" alt="Iconte">
+                <img id="VigiladoSuperTransporte" src="/Auto-Escuela-Tulua/img/VigiladoSuperTransporte.png" alt="VigiladoSuperTransporte">
                 <img id="Transporte" src="img/Transporte.png" alt="Transporte">
             </div>
             <hr>
@@ -15,10 +15,10 @@
             <hr>
             <div class="footer-section">
                 <p>Medios de Pago</p>
-                <img id="Visa" src="img/Visa.png" alt="Visa">
-                <img id="Mastercard" src="img/Mastercard.png" alt="Mastercard">
-                <img id="AmericanExpress" src="img/AmericanExpress.png" alt="AmericanExpress">
-                <img id="PSE" src="img/PSE.png" alt="PSE">
+                <img id="Visa" src="/Auto-Escuela-Tulua/img/Visa.png" alt="Visa">
+                <img id="Mastercard" src="/Auto-Escuela-Tulua/img/Mastercard.png" alt="Mastercard">
+                <img id="AmericanExpress" src="/Auto-Escuela-Tulua/img/AmericanExpress.png" alt="AmericanExpress">
+                <img id="PSE" src="/Auto-Escuela-Tulua/img/PSE.png" alt="PSE">
             </div>
         </div>
         <div>
