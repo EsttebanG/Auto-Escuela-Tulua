@@ -2,26 +2,11 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/Auto-Escuela-Tulua/img/a.png" type="image/png">
-    <!-- Icono de la página -->
-    <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/style.css">
-    <meta charset="UTF-8">
-    <!-- Icono de la página -->
-    <link rel="stylesheet" href="/Auto-Escuela-Tulua/estilos.css">
+    <?php include("../../aseets/config/head.php");?>
+    <title>Pagos_Curso_1</title>
 </head>
-
 <body>
-    <header>
-        <h1>Apartado De Pagos</h1>
-        <hr>
-        <nav>
-            <i><a class="boton" href="/Auto-Escuela-Tulua/pages/Cursos/">VOLVER</a></i>
-            <i><a class="boton" href="/Auto-Escuela-Tulua/pages/Inicio_Seccion/">Iniciar Sesión</a></i>
-            <i><a class="boton" href="/Auto-Escuela-Tulua/pages/Registro/">Registrarse</a></i>
-        </nav>
-    </header>
+<?php include("assets/config/header.php");?>
     <p>
     <h2>Pago del Curso - Automóvil y/o camioneta particular</h2>
     </p>
