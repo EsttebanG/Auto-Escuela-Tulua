@@ -2,12 +2,12 @@
 <html lang="es">
 
 <head>
-    <?php include("../../assets/config/head.php"); ?>
+    <?php include("../../../assets/config/head.php"); ?>
     <title>Pagos_Curso_2</title>
 </head>
 
 <body>
-    <?php include("../../assets/config/header.php"); ?>
+    <?php include("../../../assets/config/header.php"); ?>
     <section>
         <h2>Pago del Curso - Moto - A2
         </h2>
@@ -41,10 +41,11 @@
         </div>
     </section>
         <!-- Botón de WhatsApp -->
-        <?php include("../../assets/config/whatsapp.php");?>
+        <?php include("../../../assets/config/whatsapp.php");?>
         <!-- Botón de WhatsApp fin -->
 
-        <?php include("../../assets/config/footer.php");?>
+        <?php include("../../../assets/config/footer.php");?>
+        <?php include("../../../assets/config/js.php");?>
 </body>
 
 </html>

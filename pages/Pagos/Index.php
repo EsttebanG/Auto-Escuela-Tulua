@@ -43,6 +43,7 @@
         <!-- Botón de WhatsApp fin -->
 
         <?php include("../../assets/config/footer.php");?>
+        <?php include("../../assets/config/js.php");?>
 </body>
 
 </html>
