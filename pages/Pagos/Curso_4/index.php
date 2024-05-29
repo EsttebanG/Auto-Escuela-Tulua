@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("../../../assets/config/header.php"); ?>
+    <?php include("../../assets/config/topbar.php"); ?>
     <section>
         <h2>Pago del Curso - Automovil y moto <p></p> B1 y A1 o B1 y A2</h2>
         <div class="producto">
@@ -38,12 +38,12 @@
             </form>
         </div>
     </section>
-        <!-- Botón de WhatsApp -->
-        <?php include("../../../assets/config/whatsapp.php");?>
-        <!-- Botón de WhatsApp fin -->
+    <!-- Botón de WhatsApp -->
+    <?php include("../../../assets/config/whatsapp.php"); ?>
+    <!-- Botón de WhatsApp fin -->
 
-        <?php include("../../../assets/config/footer.php");?>
-        <?php include("../../../assets/config/js.php");?>
+    <?php include("../../../assets/config/footer.php"); ?>
+    <?php include("../../../assets/config/js.php"); ?>
 </body>
 
 </html>

@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("../../assets/config/header.php"); ?>
+    <?php include("../../assets/config/topbar.php"); ?>
     <section>
         <form action="/Auto-Escuela-Tulua/pages/Usuarios/" class="formulario">
             <div class="campo">
@@ -25,12 +25,12 @@
         </form>
     </section>
 
-        <!-- Botón de WhatsApp -->
-        <?php include("../../assets/config/whatsapp.php");?>
-        <!-- Botón de WhatsApp fin -->
+    <!-- Botón de WhatsApp -->
+    <?php include("../../assets/config/whatsapp.php"); ?>
+    <!-- Botón de WhatsApp fin -->
 
-        <?php include("../../assets/config/footer.php");?>
-        <?php include("../../assets/config/js.php");?>
+    <?php include("../../assets/config/footer.php"); ?>
+    <?php include("../../assets/config/js.php"); ?>
 </body>
 
 </html>

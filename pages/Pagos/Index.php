@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("../../assets/config/header.php"); ?>
+    <?php include("../../assets/config/topbar.php"); ?>
     <section class="contenido">
         <h2>Seleccione el Servicio a Pagar</h2>
         <form action="#" method="POST" class="formulario">
@@ -38,12 +38,12 @@
             <img id="PSE" src="img/PSE.png" alt="PSE">
         </div>
     </section>
-        <!-- Botón de WhatsApp -->
-        <?php include("../../assets/config/whatsapp.php");?>
-        <!-- Botón de WhatsApp fin -->
+    <!-- Botón de WhatsApp -->
+    <?php include("../../assets/config/whatsapp.php"); ?>
+    <!-- Botón de WhatsApp fin -->
 
-        <?php include("../../assets/config/footer.php");?>
-        <?php include("../../assets/config/js.php");?>
+    <?php include("../../assets/config/footer.php"); ?>
+    <?php include("../../assets/config/js.php"); ?>
 </body>
 
 </html>

@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("../../assets/config/header.php"); ?>
+    <?php include("../../assets/config/topbar.php"); ?>
     <section>
         <hr>
         <div class="alinear-centro-hv">
@@ -27,12 +27,12 @@
         <p>Sede Cedritos: (601) 9144499</p>
     </section>
 
-        <!-- Botón de WhatsApp -->
-        <?php include("../../assets/config/whatsapp.php");?>
-        <!-- Botón de WhatsApp fin -->
+    <!-- Botón de WhatsApp -->
+    <?php include("../../assets/config/whatsapp.php"); ?>
+    <!-- Botón de WhatsApp fin -->
 
-        <?php include("../../assets/config/footer.php");?>
-        <?php include("../../assets/config/js.php");?>
+    <?php include("../../assets/config/footer.php"); ?>
+    <?php include("../../assets/config/js.php"); ?>
 </body>
 
 </html>

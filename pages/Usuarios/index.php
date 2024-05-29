@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("../../assets/config/header.php"); ?>
+    <?php include("../../assets/config/topbar.php"); ?>
     <section>
         <h2>Información de Usuario</h2>
         <div class="user-info">
@@ -24,21 +24,13 @@
             </div>
         </div>
     </section>
-        <!-- Botón de WhatsApp -->
-        <?php include("../../assets/config/whatsapp.php");?>
-        <!-- Botón de WhatsApp fin -->
+    <!-- Botón de WhatsApp -->
+    <?php include("../../assets/config/whatsapp.php"); ?>
+    <!-- Botón de WhatsApp fin -->
 
-        <?php include("../../assets/config/footer.php");?>
-        <?php include("../../assets/config/js.php");?>
+    <?php include("../../assets/config/footer.php"); ?>
+    <?php include("../../assets/config/js.php"); ?>
 
-    <script>
-        // Obtener el nombre de la URL
-        var urlParams = new URLSearchParams(window.location.search);
-        var nombreUsuario = urlParams.get('nombre');
-
-        // Mostrar el nombre en el elemento HTML correspondiente
-        document.getElementById("user-name").textContent = nombreUsuario;
-    </script>
 </body>
 
 </html>
