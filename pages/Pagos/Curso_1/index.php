@@ -21,7 +21,7 @@
         <section>
             <div class="container">
                 <div class="row d-flex align-items-center justify-content-center m-5 ">
-                    <div class="col-5 text-center border border-2 rounded rounded-4">
+                    <div class="col-lg-5 col-ss-12 text-center border border-2 rounded rounded-4">
                         <p>Resumen de la compra:</p>
                         <h2>Automóvil y/o camioneta particular</h2>
                         <p>La alternativa cómoda y segura para compartir con tu familia</p>
