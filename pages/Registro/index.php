@@ -13,7 +13,7 @@
         <div class="container d-flex justify-content-center align-items-center">
             <div class="row border border-1 rounded-2 m-5">
                 <div class="col-12 m-2">
-                    <form class="text-center">
+                    <form class="text-center" action="/Auto-Escuela-Tulua/pages/Usuarios/" type="formulario">
                         <div class="mb-3 mx-auto ">
                             <label for="NameUser1" class="form-label">Nombre:</label>
                             <input type="text" class="form-control" id="NameUser1" aria-describedby="NameUserHelp">

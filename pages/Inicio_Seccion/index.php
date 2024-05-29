@@ -12,7 +12,7 @@
         <div class="container d-flex justify-content-center align-items-center">
             <div class="row border border-1 rounded-2 m-5">
                 <div class="col-12 m-2">
-                    <form class="text-center">
+                    <form class="text-center" action="/Auto-Escuela-Tulua/pages/Usuarios/" type="formulario">
                         <div class="mb-3 mx-auto ">
                             <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
