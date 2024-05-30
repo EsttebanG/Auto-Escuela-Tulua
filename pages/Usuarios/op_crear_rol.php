@@ -1,6 +1,6 @@
 <?php
 // op_crear_rol.php
-require 'db.php';
+require '../../assets/config/db.php';
 
 $nombre = $_POST['nombre'];
 

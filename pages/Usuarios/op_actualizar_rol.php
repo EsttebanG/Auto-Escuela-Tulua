@@ -1,6 +1,6 @@
 <?php
 // op_actualizar_rol.php
-require 'db.php';
+require '../../assets/config/db.php';
 
 $id = $_POST['id'];
 $nombre = $_POST['nombre'];
