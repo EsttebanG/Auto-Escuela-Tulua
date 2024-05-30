@@ -1,6 +1,6 @@
 <?php
 // Rol.php
-require 'db.php';
+require '../../assets/config/db.php';
 
 $stmt = $pdo->query('SELECT * FROM Rol');
 $roles = $stmt->fetchAll();

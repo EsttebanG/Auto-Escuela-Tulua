@@ -1,6 +1,6 @@
 <?php
 // op_eliminar.php
-require 'db.php';
+require '../../assets/config/db.php';
 
 $id = $_GET['id'];
 

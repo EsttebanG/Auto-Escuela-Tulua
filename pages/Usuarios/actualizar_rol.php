@@ -1,6 +1,6 @@
 <?php
 // actualizar_rol.php
-require 'db.php';
+require '../../assets/config/db.php';
 
 $id = $_GET['id'];
 $stmt = $pdo->prepare('SELECT * FROM Rol WHERE idRol = ?');
