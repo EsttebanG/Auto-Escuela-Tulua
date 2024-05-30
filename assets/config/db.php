@@ -3,7 +3,7 @@
 $host = 'localhost';
 $db = 'autoescuela';
 $user = 'root';
-$pass = '';
+$pass = 'Envio2024*';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
