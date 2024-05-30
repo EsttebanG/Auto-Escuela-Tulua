@@ -1,0 +1,6 @@
+
+# HTID:23289551: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:23289551:
+RewriteEngine On 
+RewriteRule ^$ /Auto-Escuela-Tulua/pages/ [L]

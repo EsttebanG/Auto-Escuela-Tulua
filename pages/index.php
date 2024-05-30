@@ -2,12 +2,12 @@
 <html lang="es">
 
 <head>
-    <?php include("assets/config/head.php"); ?>
+    <?php include("../assets/config/head.php"); ?>
     <title>Auto Escuela Tuluá - Inicio</title>
 </head>
 
 <body>
-    <?php include("assets/config/topbar.php"); ?>
+    <?php include("../assets/config/topbar.php"); ?>
 
 
     <main>
@@ -124,11 +124,11 @@
     </main>
 
     <!-- Botón de WhatsApp -->
-    <?php include("assets/config/whatsapp.php"); ?>
+    <?php include("../assets/config/whatsapp.php"); ?>
     <!-- Botón de WhatsApp fin -->
 
-    <?php include("assets/config/footer.php"); ?>
-    <?php include("assets/config/js.php"); ?>
+    <?php include("../assets/config/footer.php"); ?>
+    <?php include("../assets/config/js.php"); ?>
 </body>
 
 </html>
