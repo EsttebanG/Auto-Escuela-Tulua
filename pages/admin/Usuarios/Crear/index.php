@@ -76,7 +76,7 @@ $roles = $stmt->fetchAll();
                                 <div class="d-flex justify-content-center align-items-center mb-3">
                                     <input class="btn btn-warning" type="submit" value="Crear Usuario">
                                 </div>
-                                <a href="usuario.php">Volver a la lista de usuarios</a>
+                                <a href="../">Volver a la lista de usuarios</a>
                             </form> <br>
 
                         </div>
