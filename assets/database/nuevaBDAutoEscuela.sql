@@ -1,5 +1,10 @@
-CREATE DATABASE autoEscuela;
-USE autoEscuela;
+-- CREATE DATABASE autoEscuela;
+-- USE autoEscuela;
+
+-- el codigo anterior fue documentado por motivos de error al usarlo en la base de datos por limitacion de servicios
+-- del sistema por favor abstenerse de usarlo sin conocimiento de la creacion del mismo y uso de implementacion 
+-- especial e avanzada de este en la base de datos del servicio
+
 
 CREATE TABLE Rol (
     idRol INT AUTO_INCREMENT PRIMARY KEY,
