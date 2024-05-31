@@ -51,7 +51,7 @@ $usuarios = $stmt->fetchAll();
                                         </tr>
                                         <?php foreach ($usuarios as $usuario) : ?>
                                             <tr>
-                                                <td><?= htmlspecialchars($usuario['idUsuario']) ?></td>
+                                                <td><?= htmlspecialchars($usuario['cedula']) ?></td>
                                                 <td><?= htmlspecialchars($usuario['usuario']) ?></td>
                                                 <td><?= htmlspecialchars($usuario['nombre']) ?></td>
                                                 <td><?= htmlspecialchars($usuario['apellido']) ?></td>
@@ -59,8 +59,8 @@ $usuarios = $stmt->fetchAll();
                                                 <td><?= htmlspecialchars($usuario['telefono']) ?></td>
                                                 <td><?= htmlspecialchars($usuario['rol_nombre']) ?></td>
                                                 <td>
-                                                    <a class="btn btn-warning m-lg-2 m-ss-2" href="actualizar/?id=<?= $usuario['idUsuario'] ?>">Actualizar</a>
-                                                    <a class="btn btn-warning m-lg-2 m-ss-2" href="Eliminar/?id=<?= $usuario['idUsuario'] ?>">Eliminar</a>
+                                                    <a class="btn btn-warning m-lg-2 m-ss-2" href="actualizar/?id=<?= $usuario['cedula'] ?>">Actualizar</a>
+                                                    <a class="btn btn-warning m-lg-2 m-ss-2" href="Eliminar/?id=<?= $usuario['cedula'] ?>">Eliminar</a>
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>

@@ -15,7 +15,7 @@
                         Cuenta
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="/Auto-Escuela-Tulua/pages/Inicio_Seccion/">Iniciar Seccion</a></li>
+                        <li><a class="dropdown-item" href="/Auto-Escuela-Tulua/pages/Login/">Iniciar Seccion</a></li>
                         <li><a class="dropdown-item" href="/Auto-Escuela-Tulua/pages/Registro/">Registrarse</a></li>
                     </ul>
                 </li>
