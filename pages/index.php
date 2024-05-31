@@ -9,7 +9,6 @@
 <body>
     <?php include("../assets/config/topbar.php"); ?>
 
-
     <main>
         <section>
             <div class="container mt-5">

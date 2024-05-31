@@ -1,6 +1,6 @@
 <?php
 // op_crear_usuario.php
-require '../../assets/config/db.php';
+require '../../../../assets/config/db.php';
 
 $usuario = $_POST['usuario'];
 $nombre = $_POST['nombre'];
@@ -15,5 +15,5 @@ $sql = "INSERT INTO Usuario (usuario, nombre, apellido, contrasena, correo, tele
 $stmt = $pdo->prepare($sql);
 $stmt->execute(['usuario' => $usuario, 'nombre' => $nombre, 'apellido' => $apellido, 'contrasena' => $contrasena, 'correo' => $correo, 'telefono' => $telefono, 'rol' => $rol]);
 
-header('Location: usuario.php');
+header('Location: ../');
 ?>

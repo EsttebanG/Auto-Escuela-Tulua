@@ -37,22 +37,7 @@
         </section>
     </main>
 
-
-    <!-- <section>
-        <h2>Información de Usuario</h2>
-        <div class="user-info">
-            <div class="user-profile">
-                <img id="user-image" src="/Auto-Escuela-Tulua/img/default-profile.png" alt="Foto de Perfil">
-                <input type="file" id="file-input" accept="image/*">
-                <label for="file-input" class="boton">Cargar Foto</label>
-                <h3 id="user-name">Nombre de Usuario</h3>
-            </div>
-            <div class="user-details">
-                <p>Correo Electrónico: <span id="user-email">ejemplo@correo.com</span></p>
-                <p>Fecha de Registro: <span id="registration-date">28 de abril de 2024</span></p>
-            </div>
-        </div>
-    </section> -->
+    </section> 
     <!-- Botón de WhatsApp -->
     <?php include("../../assets/config/whatsapp.php"); ?>
     <!-- Botón de WhatsApp fin -->
