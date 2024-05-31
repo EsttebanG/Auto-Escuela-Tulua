@@ -42,7 +42,7 @@
                         <a class="nav-link" href="/Auto-Escuela-Tulua/pages/Cursos/">Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Auto-Escuela-Tulua/pages/sedes/">Sedes</a>
+                        <a class="nav-link" href="/Auto-Escuela-Tulua/pages/Sedes/">Sedes</a>
                     </li>
                 </ul>
             </div>
