@@ -1,7 +1,7 @@
 <?php
 // db.php
 $host = 'localhost';
-$db = 'autoescuela';
+$db = 'id22228301_autoescuelatulua';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';

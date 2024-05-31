@@ -1,5 +1,7 @@
--- CREATE DATABASE autoEscuela;
--- USE autoEscuela;
+DROP DATABASE id22228301_autoescuelatulua;
+
+-- CREATE DATABASE id22228301_autoescuelatulua;
+-- USE id22228301_autoescuelatulua;
 
 -- el codigo anterior fue documentado por motivos de error al usarlo en la base de datos por limitacion de servicios
 -- del sistema por favor abstenerse de usarlo sin conocimiento de la creacion del mismo y uso de implementacion 
@@ -12,7 +14,7 @@ CREATE TABLE Rol (
 );
 
 CREATE TABLE Usuario (
-    idUsuario INT AUTO_INCREMENT PRIMARY KEY,
+    cedula INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(50) NOT NULL,
     nombre VARCHAR(50) NOT NULL,
     apellido VARCHAR(50) NOT NULL,
@@ -27,13 +29,14 @@ CREATE TABLE asignatura (
     id_asignatura INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
     descripcion TEXT,
-    Usuario_idUsuario INT,
-    FOREIGN KEY (Usuario_idUsuario) REFERENCES Usuario(idUsuario)
+    Usuario_cedula INT,
+    FOREIGN KEY (Usuario_cedula) REFERENCES Usuario(cedula)
 );
 
 CREATE TABLE curso (
     id_curso INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
+    descripcion VARCHAR(200),
     precio DECIMAL(10, 2),
     duracion DECIMAL(5, 2),
     horario VARCHAR(50),
@@ -45,10 +48,10 @@ CREATE TABLE curso (
 );
 
 CREATE TABLE Usuario_has_curso (
-    Usuario_idUsuario INT,
+    Usuario_cedula INT,
     curso_id_curso INT,
-    PRIMARY KEY (Usuario_idUsuario, curso_id_curso),
-    FOREIGN KEY (Usuario_idUsuario) REFERENCES Usuario(idUsuario),
+    PRIMARY KEY (Usuario_cedula, curso_id_curso),
+    FOREIGN KEY (Usuario_cedula) REFERENCES Usuario(cedula),
     FOREIGN KEY (curso_id_curso) REFERENCES curso(id_curso)
 );
 
@@ -61,8 +64,8 @@ CREATE TABLE clase (
     hora_fin TIME,
     estado VARCHAR(20),
     registro_asistencia TEXT,
-    Usuario_idUsuario INT,
-    FOREIGN KEY (Usuario_idUsuario) REFERENCES Usuario(idUsuario)
+    Usuario_cedula INT,
+    FOREIGN KEY (Usuario_cedula) REFERENCES Usuario(cedula)
 );
 
 CREATE TABLE tipo_clase (
