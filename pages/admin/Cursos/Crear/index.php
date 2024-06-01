@@ -33,7 +33,7 @@
 
                                 <div class="mb-3 me-3">
                                     <label class="form-label" for="descripción">Descripción:</label>
-                                    <input class="form-control" type="text" name="descripción" id="descripción" required>
+                                    <input class="form-control" type="text" name="descripcion" id="descripcion" required>
                                 </div>
 
                                 <div class="mb-3 me-3">
@@ -43,7 +43,7 @@
 
                                 <div class="mb-3 me-3">
                                     <label class="form-label" for="duración">Duración (horas):</label>
-                                    <input class="form-control" type="nomber" name="duración" id="duración" required>
+                                    <input class="form-control" type="number" name="duracion" id="duracion" required>
                                 </div>
 
                                 <div class="mb-3 me-3">
