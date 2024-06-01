@@ -1,3 +1,12 @@
+<?php
+// Rol.php
+require '../../assets/config/db.php';
+
+$stmt = $pdo->query('SELECT * FROM curso');
+$cursos = $stmt->fetchAll();
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -49,57 +58,27 @@
         </section>
         <section>
 
-            <div class="d-none">
+            <div class="d-s-none d-lg-block">
                 <div class="container container-fluid mt-5">
-                    <div class="row">
+                    <div class="row d-flex align-items-center justify-content-center">
 
-                        <div class="col-lg-4">
-                            <div class="card text-center" style="width:18rem;">
-                                <h5 class="card-title">Automovil y/o Camioneta Particular</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">La alternativa cómoda y segura para compartir con tu familia</h6>
-                                <div class=" d-flex justify-content-center align-items-center">
-                                    <div class="col-9">
-                                        <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
+                        <?php foreach ($cursos as $curso) : ?>
+                            <div class="col-lg-3 m-3">
+                                <div class="card text-center" style="width:18rem;">
+                                    <h5 class="card-title"><?= htmlspecialchars($curso['nombre']) ?></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted "><?= htmlspecialchars($curso['descripcion']) ?></h6>
+                                    <div class=" d-flex justify-content-center align-items-center">
+                                        <div class="col-9">
+                                            <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">$ <?= htmlspecialchars($curso['precio']) ?></p>
+                                        <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_1/" role="button">Pagar</a>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <p class="card-text">$ 1.138.000</p>
-                                    <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_1/" role="button">Pagar</a>
-                                </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="card text-center" style="width:18rem;">
-                                <h5 class="card-title">Moto - A2</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">El vehículo que te llevará a tus nuevas aventuras</h6>
-                                <div class=" d-flex justify-content-center align-items-center">
-                                    <div class="col-9">
-                                        <img src="/Auto-Escuela-Tulua/img/moto.jpeg" class="card-img-top" alt="moto">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">$ 650.000</p>
-                                    <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_2/" role="button">Pagar</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="card text-center" style="width:18rem;">
-                                <h5 class="card-title">Moto - A1</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">El vehículo que te llevará a tus nuevas aventuras</h6>
-                                <div class=" d-flex justify-content-center align-items-center">
-                                    <div class="col-9">
-                                        <img src="/Auto-Escuela-Tulua/img/moto1.jpeg" class="card-img-top" alt="automovil">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">$ 450.000</p>
-                                    <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_3/" role="button">Pagar</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
 
                     </div>
                     <br>
