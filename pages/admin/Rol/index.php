@@ -31,7 +31,7 @@ $roles = $stmt->fetchAll();
                         </div>
                         <div class="row">
                             <div class="col-12 d-flex align-items-center justify-content-end">
-                                <a class="btn btn-warning me-lg-5 mb-lg-2 me-ss-0" href="/Auto-Escuela-Tulua/pages/Admin/Rol/Crear/">Crear Rol</a>
+                                <a class="btn btn-warning me-lg-5 mb-lg-2 me-ss-0" href="Crear/">Crear Rol</a>
                             </div>
                         </div>
                         <div class="row">
