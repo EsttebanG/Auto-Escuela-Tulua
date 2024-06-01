@@ -47,7 +47,6 @@
                 </div>
             </div>
         </section>
-
         <section>
 
             <div class="d-none">
