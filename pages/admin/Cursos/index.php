@@ -55,8 +55,8 @@ $cursos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                                 <td><?php echo htmlspecialchars($curso['duracion']); ?></td>
                                                 <td><?php echo htmlspecialchars($curso['cupos_disponibles']); ?></td>
                                                 <td>
-                                                    <a href="Actualizar/?id=<?php echo $curso['id_curso']; ?>">Actualizar</a>
-                                                    <a href="Eliminar/?id=<?php echo $curso['id_curso']; ?>">Eliminar</a>
+                                                    <a class="btn btn-warning m-lg-2 m-ss-2" href="Actualizar/?id=<?php echo $curso['id_curso']; ?>">Actualizar</a>
+                                                    <a class="btn btn-warning m-lg-2 m-ss-2" href="Eliminar/?id=<?php echo $curso['id_curso']; ?>">Eliminar</a>
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>
@@ -69,34 +69,6 @@ $cursos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </section>
     </main>
-
-    <!-- <h1>Listado de Cursos</h1>
-    <a href="Crear/">Crear Nuevo Curso</a>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Descripción</th>
-            <th>Precio</th>
-            <th>Duración</th>
-            <th>Cupos Disponibles</th>
-            <th>Acciones</th>
-        </tr>
-        <?php foreach ($cursos as $curso) : ?>
-            <tr>
-                <td><?php echo htmlspecialchars($curso['id_curso']); ?></td>
-                <td><?php echo htmlspecialchars($curso['nombre']); ?></td>
-                <td><?php echo htmlspecialchars($curso['descripcion']); ?></td>
-                <td><?php echo htmlspecialchars($curso['precio']); ?></td>
-                <td><?php echo htmlspecialchars($curso['duracion']); ?></td>
-                <td><?php echo htmlspecialchars($curso['cupos_disponibles']); ?></td>
-                <td>
-                    <a href="Actualizar/?id=<?php echo $curso['id_curso']; ?>">Actualizar</a>
-                    <a href="Eliminar/?id=<?php echo $curso['id_curso']; ?>">Eliminar</a>
-                </td>
-            </tr>
-        <?php endforeach; ?> -->
-
 
         <!-- Botón de WhatsApp -->
         <?php include("../../../assets/config/whatsapp.php"); ?>
