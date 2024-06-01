@@ -49,6 +49,7 @@
                         <div class="dropdown-menu" aria-labelledby="AdminOptions">
                             <a class="dropdown-item" href="/Auto-Escuela-Tulua/pages/Admin/Usuarios/">Usuarios</a>
                             <a class="dropdown-item" href="/Auto-Escuela-Tulua/pages/Admin/Rol/">Roles</a>
+                            <a class="dropdown-item" href="/Auto-Escuela-Tulua/pages/Admin/Cursos/">Cursos</a>
                         </div>
                     </li>
                 </ul>
