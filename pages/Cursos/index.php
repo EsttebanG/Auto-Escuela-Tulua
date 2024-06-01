@@ -58,13 +58,14 @@ $cursos = $stmt->fetchAll();
                 </div>
             </div>
         </section>
+
         <section>
 
-            <div class="d-s-none d-lg-block">
+            <div class="d-s-none d-lg-none">
                 <div class="container container-fluid mt-5">
                     <div class="row d-flex align-items-center justify-content-center">
                         <?php foreach ($cursos as $curso) : ?>
-                            <div class="col-lg-3 m-3">
+                            <div class="col-lg-3 m-3 d-none">
                                 <div class="card text-center" style="width:18rem;">
                                     <h5 class="card-title"><?= htmlspecialchars($curso['nombre']) ?></h5>
                                     <h6 class="card-subtitle mb-2 text-muted "><?= htmlspecialchars($curso['descripcion']) ?></h6>
@@ -84,160 +85,30 @@ $cursos = $stmt->fetchAll();
                 </div>
             </div>
 
-            <div class="d-ss-none d-lg-block">
-                <div class="container container-fluid mt-5">
-                    <div class="row">
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="d-ss-block d-lg-none">
-                <div class="container container-fluid mt-5">
-                    <div class="row">
-                        <div id="CarouselCel1" class="carousel slide" data-bs-theme="dark">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#CarouselCel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#CarouselCel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#CarouselCel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#CarouselCel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#CarouselCel1" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#CarouselCel1" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                <button type="button" data-bs-target="#CarouselCel1" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="d-flex justify-content-center align-content-center mb-5 mt-5">
-                                        <div class="card text-center" style="width:18rem;">
-                                            <h5 class="card-title">Automovil y/o Camioneta Particular</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted ">La alternativa cómoda y segura para compartir con tu familia</h6>
-                                            <div class=" d-flex justify-content-center align-items-center">
-                                                <div class="col-9">
-                                                    <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
-                                                </div>
+            <div class="d-ss-block d-lg-block">
+                <div class="container mt-5 position-relative" style="background-color: #323232;">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <?php foreach ($cursos as $curso) : ?>
+                                <div class="swiper-slide col-lg-4 col-ss-11 p-5 text-center">
+                                    <div class="card text-center" style="width:18rem;">
+                                        <h5 class="card-title"><?= htmlspecialchars($curso['nombre']) ?></h5>
+                                        <h6 class="card-subtitle mb-2 text-muted "><?= htmlspecialchars($curso['descripcion']) ?></h6>
+                                        <div class=" d-flex justify-content-center align-items-center">
+                                            <div class="col-9">
+                                                <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
                                             </div>
-                                            <div class="card-body">
-                                                <p class="card-text">$ 1.138.000</p>
-                                                <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_1/" role="button">Pagar</a>
-                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">$ <?= htmlspecialchars($curso['precio']) ?></p>
+                                            <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/?id_curso=<?= htmlspecialchars($curso['id_curso']) ?>" role="button">Pagar</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="d-flex justify-content-center align-content-center mb-5 mt-5">
-                                        <div class="card text-center" style="width:18rem;">
-                                            <h5 class="card-title">Moto - A2</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted ">El vehículo que te llevará a tus nuevas aventuras</h6>
-                                            <div class=" d-flex justify-content-center align-items-center">
-                                                <div class="col-9">
-                                                    <img src="/Auto-Escuela-Tulua/img/moto.jpeg" class="card-img-top" alt="moto">
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <p class="card-text">$ 650.000</p>
-                                                <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_2/" role="button">Pagar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-flex justify-content-center align-content-center mb-5 mt-5">
-                                        <div class="card text-center" style="width:18rem;">
-                                            <h5 class="card-title">Moto - A1</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted ">El vehículo que te llevará a tus nuevas aventuras</h6>
-                                            <div class=" d-flex justify-content-center align-items-center">
-                                                <div class="col-9">
-                                                    <img src="/Auto-Escuela-Tulua/img/moto1.jpeg" class="card-img-top" alt="automovil">
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <p class="card-text">$ 450.000</p>
-                                                <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_3/" role="button">Pagar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-flex justify-content-center align-content-center mb-5 mt-5">
-                                        <div class="card text-center" style="width:18rem;">
-                                            <h5 class="card-title">Automóvil y moto - B1 y A1 o B1 y A2</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted ">El vehículo que te llevará a tus nuevas aventuras</h6>
-                                            <div class=" d-flex justify-content-center align-items-center">
-                                                <div class="col-9">
-                                                    <img src="/Auto-Escuela-Tulua/img/automovil%20y%20moto.jpeg" class="card-img-top" alt="automovil">
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <p class="card-text">$ 1.588.000</p>
-                                                <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_4/" role="button">Pagar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-flex justify-content-center align-content-center mb-5 mt-5">
-                                        <div class="card text-center" style="width:18rem;">
-                                            <h5 class="card-title">Autoservicio Público - C1</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted ">Vehículo al servicio de tu negocio y comunidad</h6>
-                                            <div class=" d-flex justify-content-center align-items-center">
-                                                <div class="col-9">
-                                                    <img src="/Auto-Escuela-Tulua/img/bus12.jpeg" class="card-img-top" alt="moto">
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <p class="card-text">$ 1.452.000</p>
-                                                <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_5/" role="button">Pagar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-flex justify-content-center align-content-center mb-5 mt-5">
-                                        <div class="card text-center" style="width:18rem;">
-                                            <h5 class="card-title">Camiones Buses y Busetas - C2</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted ">El vehículo que te llevará a tus nuevas aventuras</h6>
-                                            <div class=" d-flex justify-content-center align-items-center">
-                                                <div class="col-9">
-                                                    <img src="/Auto-Escuela-Tulua/img/buseta.jpeg" class="card-img-top" alt="automovil">
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <p class="card-text">$ 1.450.000</p>
-                                                <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_6/" role="button">Pagar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-flex justify-content-center align-content-center mb-5 mt-5">
-                                        <div class="card text-center" style="width:18rem;">
-                                            <h5 class="card-title">Recategorización de Licencia - B1 A C1</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted ">El vehículo que te llevará a tus nuevas aventuras</h6>
-                                            <div class=" d-flex justify-content-center align-items-center">
-                                                <div class="col-9">
-                                                    <img src="/Auto-Escuela-Tulua/img/parqueadero.jpeg" class="card-img-top" alt="automovil">
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <p class="card-text">$ 1.000.000</p>
-                                                <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/Curso_7/" role="button">Pagar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#CarouselCel1" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#CarouselCel1" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
-            </div>
 
         </section>
 
@@ -326,15 +197,30 @@ $cursos = $stmt->fetchAll();
         </section>
     </main>
 
-
-
-
     <!-- Botón de WhatsApp -->
     <?php include("../../assets/config/whatsapp.php"); ?>
     <!-- Botón de WhatsApp fin -->
 
     <?php include("../../assets/config/footer.php"); ?>
     <?php include("../../assets/config/js.php"); ?>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            coverflowEffect: {
+                depth: 300,
+                modifer: 1,
+                slidesShadows: true,
+                rotate: 0,
+                stretch: 0
+            }
+        })
+    </script>
+
 </body>
 
 </html>
