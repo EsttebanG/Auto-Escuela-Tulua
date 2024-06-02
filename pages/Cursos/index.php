@@ -11,9 +11,9 @@ $cursos = $stmt->fetchAll();
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <?php include("../../assets/config/head.php"); ?>
+    <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/font-awesome/6.4.0/css/all.min.css" />
     <title>Auto Escuela Tuluá - Cursos</title>
 </head>
 
@@ -86,29 +86,58 @@ $cursos = $stmt->fetchAll();
             </div>
 
             <div class="d-ss-block d-lg-block">
-                <div class="container mt-5 position-relative" style="background-color: #323232;">
+                <div class="container mt-5">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <?php foreach ($cursos as $curso) : ?>
-                                <div class="swiper-slide col-lg-4 col-ss-11 p-5 text-center">
-                                    <div class="card text-center" style="width:18rem;">
-                                        <h5 class="card-title"><?= htmlspecialchars($curso['nombre']) ?></h5>
-                                        <h6 class="card-subtitle mb-2 text-muted "><?= htmlspecialchars($curso['descripcion']) ?></h6>
-                                        <div class=" d-flex justify-content-center align-items-center">
-                                            <div class="col-9">
-                                                <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text">$ <?= htmlspecialchars($curso['precio']) ?></p>
-                                            <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/?id_curso=<?= htmlspecialchars($curso['id_curso']) ?>" role="button">Pagar</a>
+                            <div class="swiper-slide">
+                                <div class="card text-center" style="width:18rem;">
+                                    <h5 class="card-title">1</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted ">asdfadf asfdsfadad</h6>
+                                    <div class=" d-flex justify-content-center align-items-center">
+                                        <div class="col-9">
+                                            <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
                                         </div>
                                     </div>
+                                    <div class="card-body">
+                                        <p class="card-text">$ <?= htmlspecialchars($curso['precio']) ?></p>
+                                        <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/?id_curso=<?= htmlspecialchars($curso['id_curso']) ?>" role="button">Pagar</a>
+                                    </div>
                                 </div>
-                            <?php endforeach; ?>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card text-center" style="width:18rem;">
+                                    <h5 class="card-title">2</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted ">asdfadf asfdsfadad</h6>
+                                    <div class=" d-flex justify-content-center align-items-center">
+                                        <div class="col-9">
+                                            <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">$ 1</p>
+                                        <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/?id_curso=<?= htmlspecialchars($curso['id_curso']) ?>" role="button">Pagar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card text-center" style="width:18rem;">
+                                    <h5 class="card-title">3</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted ">asdfadf asfdsfadad</h6>
+                                    <div class=" d-flex justify-content-center align-items-center">
+                                        <div class="col-9">
+                                            <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">$ <?= htmlspecialchars($curso['precio']) ?></p>
+                                        <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/?id_curso=<?= htmlspecialchars($curso['id_curso']) ?>" role="button">Pagar</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
         </section>
 
@@ -203,7 +232,8 @@ $cursos = $stmt->fetchAll();
 
     <?php include("../../assets/config/footer.php"); ?>
     <?php include("../../assets/config/js.php"); ?>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/Auto-Escuela-Tulua/assets/javascript/Swiper@9/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -211,13 +241,12 @@ $cursos = $stmt->fetchAll();
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
-            loop: true,
             coverflowEffect: {
+                rotate: 15,
+                strech: 0,
                 depth: 300,
-                modifer: 1,
-                slidesShadows: true,
-                rotate: 0,
-                stretch: 0
+                modifier: 1,
+                slideShadows: true,
             }
         })
     </script>
