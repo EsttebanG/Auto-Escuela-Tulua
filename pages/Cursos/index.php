@@ -12,7 +12,7 @@ $cursos = $stmt->fetchAll();
 
 <head>
     <?php include("../../assets/config/head.php"); ?>
-    <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/swiper@9/-swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/swiper@9/swiper-bundle.min.css" />
     <title>Auto Escuela Tuluá - Cursos</title>
 </head>
 
@@ -197,7 +197,7 @@ $cursos = $stmt->fetchAll();
 
     <?php include("../../assets/config/js.php"); ?>
 
-    <script src="/Auto-Escuela-Tulua/assets/javascript/Swiper@9/-swiper-bundle.min.js"></script>
+    <script src="/Auto-Escuela-Tulua/assets/javascript/Swiper@9/swiper-bundle.min.js"></script>
 
     <script>
         /*=============== SWIPER JS ===============*/
