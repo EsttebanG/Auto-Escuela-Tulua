@@ -13,7 +13,6 @@ $cursos = $stmt->fetchAll();
 <head>
     <?php include("../../assets/config/head.php"); ?>
     <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/swiper@9/-swiper-bundle.min.css" />
-    <!-- <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/font-awesome/6.4.0/css/all.min.css" /> -->
     <title>Auto Escuela Tuluá - Cursos</title>
 </head>
 
@@ -195,7 +194,6 @@ $cursos = $stmt->fetchAll();
 
     <?php include("../../assets/config/footer.php"); ?>
     <script src="/Auto-Escuela-Tulua/assets/javascript/jquery/jquery-3.5.1.slim.min.js"></script>
-    <!-- <script src="/Auto-Escuela-Tulua/assets/javascript/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> -->
 
     <?php include("../../assets/config/js.php"); ?>
 
