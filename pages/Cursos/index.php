@@ -12,8 +12,8 @@ $cursos = $stmt->fetchAll();
 
 <head>
     <?php include("../../assets/config/head.php"); ?>
-    <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/swiper@9/-swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="/Auto-Escuela-Tulua/assets/css/font-awesome/6.4.0/css/all.min.css" /> -->
     <title>Auto Escuela Tuluá - Cursos</title>
 </head>
 
@@ -61,68 +61,46 @@ $cursos = $stmt->fetchAll();
 
         <section>
 
-            <div class="d-s-none d-lg-none">
-                <div class="container container-fluid mt-5">
-                    <div class="row d-flex align-items-center justify-content-center">
-                        <?php foreach ($cursos as $curso) : ?>
-                            <div class="col-lg-3 m-3 d-none">
-                                <div class="card text-center" style="width:18rem;">
-                                    <h5 class="card-title"><?= htmlspecialchars($curso['nombre']) ?></h5>
-                                    <h6 class="card-subtitle mb-2 text-muted "><?= htmlspecialchars($curso['descripcion']) ?></h6>
-                                    <div class=" d-flex justify-content-center align-items-center">
-                                        <div class="col-9">
-                                            <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
+
+
+            <div class="container">
+                <div class="card__container swiper">
+                    <div class="card__content">
+                        <div class="swiper-wrapper">
+                            <?php foreach ($cursos as $curso) : ?>
+                                <article class="card__article swiper-slide">
+                                    <div class="card text-center" style="width:18rem;">
+                                        <h5 class="card-title"><?= htmlspecialchars($curso['nombre']) ?></h5>
+                                        <h6 class="card-subtitle mb-2 text-muted "><?= htmlspecialchars($curso['descripcion']) ?></h6>
+                                        <div class=" d-flex justify-content-center align-items-center">
+                                            <div class="col-9">
+                                                <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">$ <?= htmlspecialchars($curso['precio']) ?></p>
+                                            <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/?<?= htmlspecialchars($curso['id_curso']) ?>" role="button">Pagar</a>
                                         </div>
                                     </div>
-                                    <div class="card-body">
-                                        <p class="card-text">$ <?= htmlspecialchars($curso['precio']) ?></p>
-                                        <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/?<?= htmlspecialchars($curso['id_curso']) ?>" role="button">Pagar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
+                                </article>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
+
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
 
-            <div class="d-ss-block d-lg-block">
-                <div class="container mt-5">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide d-flex justify-content-center align-items-center w-50">
-                                <div class="card text-center" style="width:18rem;">
-                                    <h5 class="card-title">1</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted ">asdfadf asfdsfadad</h6>
-                                    <div class=" d-flex justify-content-center align-items-center">
-                                        <div class="col-9">
-                                            <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">$ <?= htmlspecialchars($curso['precio']) ?></p>
-                                        <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/?id_curso=<?= htmlspecialchars($curso['id_curso']) ?>" role="button">Pagar</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide d-flex justify-content-center align-items-center w-25">
-                                <div class="card text-center" style="width:18rem;">
-                                    <h5 class="card-title">1</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted ">asdfadf asfdsfadad</h6>
-                                    <div class=" d-flex justify-content-center align-items-center">
-                                        <div class="col-9">
-                                            <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">$ <?= htmlspecialchars($curso['precio']) ?></p>
-                                        <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/?id_curso=<?= htmlspecialchars($curso['id_curso']) ?>" role="button">Pagar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </section>
 
@@ -216,25 +194,39 @@ $cursos = $stmt->fetchAll();
     <!-- Botón de WhatsApp fin -->
 
     <?php include("../../assets/config/footer.php"); ?>
+    <script src="/Auto-Escuela-Tulua/assets/javascript/jquery/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="/Auto-Escuela-Tulua/assets/javascript/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> -->
+
     <?php include("../../assets/config/js.php"); ?>
 
-    <script src="/Auto-Escuela-Tulua/assets/javascript/Swiper@9/swiper-bundle.min.js"></script>
+    <script src="/Auto-Escuela-Tulua/assets/javascript/Swiper@9/-swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
+        /*=============== SWIPER JS ===============*/
+        let swiperCards = new Swiper(".card__content", {
             loop: true,
-            coverflowEffect: {
-                rotate: 0,
-                strech: 0,
-                depth: 500,
-                modifier: 1,
-                slideShadows: false,
-            }
-        })
+            spaceBetween: 32,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                },
+                968: {
+                    slidesPerView: 3,
+                },
+            },
+        });
     </script>
 
 </body>
