@@ -89,7 +89,7 @@ $cursos = $stmt->fetchAll();
                 <div class="container mt-5">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide d-flex justify-content-center align-items-center w-50">
                                 <div class="card text-center" style="width:18rem;">
                                     <h5 class="card-title">1</h5>
                                     <h6 class="card-subtitle mb-2 text-muted ">asdfadf asfdsfadad</h6>
@@ -104,24 +104,9 @@ $cursos = $stmt->fetchAll();
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide d-flex justify-content-center align-items-center w-25">
                                 <div class="card text-center" style="width:18rem;">
-                                    <h5 class="card-title">2</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted ">asdfadf asfdsfadad</h6>
-                                    <div class=" d-flex justify-content-center align-items-center">
-                                        <div class="col-9">
-                                            <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">$ 1</p>
-                                        <a class="btn btn-warning" href="/Auto-Escuela-Tulua/pages/Pagos/?id_curso=<?= htmlspecialchars($curso['id_curso']) ?>" role="button">Pagar</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card text-center" style="width:18rem;">
-                                    <h5 class="card-title">3</h5>
+                                    <h5 class="card-title">1</h5>
                                     <h6 class="card-subtitle mb-2 text-muted ">asdfadf asfdsfadad</h6>
                                     <div class=" d-flex justify-content-center align-items-center">
                                         <div class="col-9">
@@ -241,12 +226,13 @@ $cursos = $stmt->fetchAll();
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
+            loop: true,
             coverflowEffect: {
-                rotate: 15,
+                rotate: 0,
                 strech: 0,
-                depth: 300,
+                depth: 500,
                 modifier: 1,
-                slideShadows: true,
+                slideShadows: false,
             }
         })
     </script>
