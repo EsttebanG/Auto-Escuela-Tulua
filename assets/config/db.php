@@ -1,7 +1,5 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','id22228301_autoescuelatulua');
-
 // db.php
 $host = 'localhost';
 $db = 'id22228301_autoescuelatulua';
