@@ -36,7 +36,7 @@ if (!$curso) {
                 <div class="container d-flex justify-content-center align-items-center">
                     <div class="row border border-1 rounded-2 m-5">
                         <div class="col-12 m-2">
-                            <form class="text-center" action="op_actualizar_cursos.php" method="post">
+                            <form class="text-center" action="op_actualizar_cursos.php" method="post" enctype="multipart/form-data">
                                 <div class="mb-3 me-3 mx-auto ">
                                     <input type="hidden" name="id" value="<?php echo $curso['id_curso']; ?>">
                                     <label class="form-label" for="nombre">Nombre:</label>
