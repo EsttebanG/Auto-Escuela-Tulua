@@ -37,6 +37,7 @@ CREATE TABLE curso (
     id_curso INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
     descripcion VARCHAR(200),
+    curso_img_name VARCHAR(100),
     precio DECIMAL(10, 2),
     duracion DECIMAL(5, 2),
     horario VARCHAR(50),

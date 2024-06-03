@@ -44,6 +44,7 @@ $cursos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                             <th>Precio</th>
                                             <th>Duración</th>
                                             <th>Cupos Disponibles</th>
+                                            <th>Imagen Curso</th>
                                             <th>Acciones</th>
                                         </tr>
                                         <?php foreach ($cursos as $curso) : ?>
@@ -54,6 +55,7 @@ $cursos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                                 <td><?php echo htmlspecialchars($curso['precio']); ?></td>
                                                 <td><?php echo htmlspecialchars($curso['duracion']); ?></td>
                                                 <td><?php echo htmlspecialchars($curso['cupos_disponibles']); ?></td>
+                                                <td><img class="img img-thumbnail col-6" src="/Auto-Escuela-Tulua/img/Curso/<?php echo htmlspecialchars($curso['curso_img_name']); ?>" alt="<?php echo htmlspecialchars($curso['curso_img_name']); ?>"/><?php echo htmlspecialchars($curso['curso_img_name']); ?></td>
                                                 <td>
                                                     <a class="btn btn-warning m-lg-2 m-ss-2" href="Actualizar/?id=<?php echo $curso['id_curso']; ?>">Actualizar</a>
                                                     <a class="btn btn-warning m-lg-2 m-ss-2" href="Eliminar/?id=<?php echo $curso['id_curso']; ?>">Eliminar</a>

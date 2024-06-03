@@ -1,10 +1,14 @@
 <?php
+
+$conn = mysqli_connect('localhost','root','','id22228301_autoescuelatulua');
+
 // db.php
 $host = 'localhost';
 $db = 'id22228301_autoescuelatulua';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
+
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
@@ -18,3 +22,5 @@ try {
 } catch (\PDOException $e) {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
+
+?>

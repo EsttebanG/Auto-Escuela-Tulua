@@ -58,6 +58,10 @@ if (!$curso) {
                                     <label class="form-label" for="nombre">Cupos Disponibles:</label>
                                     <input class="form-control" type="number" name="cupos_disponibles" value="<?php echo $curso['cupos_disponibles']; ?>" required><br>
                                 </div>
+                                <div class="mb-3 me-3">
+                                    <label class="form-label" for="Image">Subir Imagen</label>
+                                    <input class="form-control" type="file" name="fileImage" id="FileImage">
+                                </div>
                                 <div class="mb-3 mx-auto">
                                     <button class="btn btn-warning" type="submit">Actualizar</button>
                                 </div>

@@ -73,7 +73,7 @@ $cursos = $stmt->fetchAll();
                                         <h6 class="card-subtitle mb-2 text-muted "><?= htmlspecialchars($curso['descripcion']) ?></h6>
                                         <div class=" d-flex justify-content-center align-items-center">
                                             <div class="col-9">
-                                                <img src="/Auto-Escuela-Tulua/img/automovil.jpeg" class="card-img-top" alt="automovil">
+                                                <img src="/Auto-Escuela-Tulua/img/Curso/<?= htmlspecialchars($curso['curso_img_name']) ?>" class="card-img-top" alt="automovil">
                                             </div>
                                         </div>
                                         <div class="card-body">

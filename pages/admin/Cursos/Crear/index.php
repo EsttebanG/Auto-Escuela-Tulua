@@ -24,7 +24,7 @@
                 <div class="container d-flex justify-content-center align-items-center">
                     <div class="row border border-1 rounded-4 m-5">
                         <div class="col-12 m-2">
-                            <form class="text-center" action="op_crear_cursos.php" method="post">
+                            <form class="text-center" action="op_crear_cursos.php" method="post" enctype="multipart/form-data">
 
                                 <div class="mb-3 me-3">
                                     <label class="form-label" for="nombre">Nombre:</label>
@@ -49,6 +49,11 @@
                                 <div class="mb-3 me-3">
                                     <label class="form-label" for="cupos_disponibles">Cupos Disponibles:</label>
                                     <input class="form-control" type="number" name="cupos_disponibles" id="cupos_disponibles" required>
+                                </div>
+
+                                <div class="mb-3 me-3">
+                                    <label class="form-label" for="Image">Subir Imagen</label>
+                                    <input class="form-control" type="file" name="fileImage" id="FileImage" required>
                                 </div>
 
                                 <div class="d-flex justify-content-center align-items-center mb-3">
