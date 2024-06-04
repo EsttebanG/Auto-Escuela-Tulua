@@ -35,6 +35,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo '<p class="alert alert-danger">Por favor, complete ambos campos: email y contraseña.</p>';
     }
 } else {
-    echo '<p class="alert alert-danger">Método de solicitud no válido.</p>';
 }
 ?>

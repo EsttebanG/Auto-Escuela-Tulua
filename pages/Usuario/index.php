@@ -33,7 +33,7 @@
                 ?>
                             <div class="row m-5 d-flex justify-content-center align-items-center">
                                 <div class="col-6">
-                                    <div class="mx-auto d-flex align-items-center justify-content-center">
+                                    <div class="col-6 mx-auto d-flex align-items-center justify-content-center">
                                         <picture class="rounded-5">
                                             <source srcset="/Auto-Escuela-Tulua/img/Usuario/<?php echo htmlspecialchars($usuario['usuario_img_name']); ?>" type="image/svg+xml">
                                             <img src="/Auto-Escuela-Tulua/img/Usuario/<?php echo htmlspecialchars($usuario['usuario_img_name']); ?>" class="img-fluid img-thumbnail rounded-5" alt="<?php echo htmlspecialchars($usuario['usuario_img_name']); ?>">

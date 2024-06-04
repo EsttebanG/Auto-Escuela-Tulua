@@ -20,10 +20,10 @@ if ($fileImage1) {
     // Obtener el nombre de la imagen actual
     $stmt = $pdo->prepare('SELECT usuario_img_name FROM Usuario WHERE cedula = ?');
     $stmt->execute([$id]);
-    $curso = $stmt->fetch(PDO::FETCH_ASSOC);
+    $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($usuario && $usuario['usuario_img_name']) {
-        $currentImage = '../../../../img/Usuario/' . $curso['usuario_img_name'];
+        $currentImage = '../../../../img/Usuario/' . $usuario['usuario_img_name'];
         if (file_exists($currentImage)) {
             unlink($currentImage); // Eliminar la imagen actual
         }
@@ -34,7 +34,7 @@ if ($fileImage1) {
     move_uploaded_file($tmpFileImage, $ruteFile);
 
     // Actualizar curso incluyendo la nueva imagen
-    $stmt = $pdo->prepare('UPDATE usuario SET usuario = ?, nombre = ?, apellido = ?, contrasena = ?, correo = ?, telefono = ?, usuario_img_name = ?, Rol_idRol =    WHERE cedula = ?');
+    $stmt = $pdo->prepare('UPDATE usuario SET usuario = ?, nombre = ?, apellido = ?, contrasena = ?, correo = ?, telefono = ?, usuario_img_name = ?, Rol_idRol = ?   WHERE cedula = ?');
     $stmt->execute([$usuario, $nombre, $apellido, $contrasena, $correo, $telefono, $fileImage1, $rol, $id]);
 } else {
     // Actualizar curso sin cambiar la imagen

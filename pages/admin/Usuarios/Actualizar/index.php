@@ -3,7 +3,7 @@
 require '../../../../assets/config/db.php';
 
 $id = $_GET['id'];
-$stmt = $pdo->prepare('SELECT * FROM Usuario WHERE idUsuario = ?');
+$stmt = $pdo->prepare('SELECT * FROM Usuario WHERE cedula = ?');
 $stmt->execute([$id]);
 $usuario = $stmt->fetch();
 
@@ -39,7 +39,7 @@ $roles = $stmt->fetchAll();
                     <div class="row border border-1 rounded-2 m-5">
                         <div class="col-12 m-2">
                             <form class="text-center" action="op_actualizar_usuario.php" method="post" enctype="multipart/form-data">
-                                <input type="hidden" name="id" value="<?= $usuario['idUsuario'] ?>">
+                                <input type="hidden" name="id" value="<?= $usuario['cedula'] ?>">
                                 <div class="mb-3 me-3 mx-auto">
                                     <label class="form-label" for="usuario">Usuario:</label>
                                     <input class="form-control" type="text" name="usuario" id="usuario" value="<?= htmlspecialchars($usuario['usuario']) ?>" required>
@@ -67,7 +67,7 @@ $roles = $stmt->fetchAll();
                                 </div>
                                 <div class="mb-3 me-3">
                                     <label class="form-label" for="Image">Subir Imagen</label>
-                                    <input class="form-control" type="file" name="fileImage" id="FileImage" required>
+                                    <input class="form-control" type="file" name="fileImage" id="FileImage">
                                 </div>
                                 <div class="mb-3 me-3">
                                     <label class="form-label" for="rol">Rol:</label>
