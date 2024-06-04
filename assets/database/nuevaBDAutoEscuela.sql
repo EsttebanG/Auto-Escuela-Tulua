@@ -1,7 +1,7 @@
-DROP DATABASE id22228301_autoescuelatulua;
+-- DROP DATABASE id22228301_autoescuelatulua;
 
--- CREATE DATABASE id22228301_autoescuelatulua;
--- USE id22228301_autoescuelatulua;
+CREATE DATABASE id22228301_autoescuelatulua;
+USE id22228301_autoescuelatulua;
 
 -- el codigo anterior fue documentado por motivos de error al usarlo en la base de datos por limitacion de servicios
 -- del sistema por favor abstenerse de usarlo sin conocimiento de la creacion del mismo y uso de implementacion 
@@ -21,6 +21,7 @@ CREATE TABLE Usuario (
     contrasena VARCHAR(20) NOT NULL,
     correo VARCHAR(50) NOT NULL,
     telefono VARCHAR(10),
+    usuario_img_name VARCHAR(100),
     Rol_idRol INT,
     FOREIGN KEY (Rol_idRol) REFERENCES Rol(idRol)
 );

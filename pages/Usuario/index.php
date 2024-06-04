@@ -35,8 +35,8 @@
                                 <div class="col-6">
                                     <div class="mx-auto d-flex align-items-center justify-content-center">
                                         <picture class="rounded-5">
-                                            <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37XYCmx_TcTnP5dIjY0otg-eq09BsXRlS2w&s" type="image/svg+xml">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37XYCmx_TcTnP5dIjY0otg-eq09BsXRlS2w&s" class="img-fluid img-thumbnail rounded-5" alt="...">
+                                            <source srcset="/Auto-Escuela-Tulua/img/Usuario/<?php echo htmlspecialchars($usuario['usuario_img_name']); ?>" type="image/svg+xml">
+                                            <img src="/Auto-Escuela-Tulua/img/Usuario/<?php echo htmlspecialchars($usuario['usuario_img_name']); ?>" class="img-fluid img-thumbnail rounded-5" alt="<?php echo htmlspecialchars($usuario['usuario_img_name']); ?>">
                                         </picture>
                                     </div>
                                     <div class="mt-3 mx-auto d-flex align-items-center justify-content-center">
@@ -47,8 +47,8 @@
                                     <div>
                                         <p><strong>Nombre</strong>: <span><?php echo htmlspecialchars($usuario['nombre']); ?></span></p>
                                         <p><strong>Apellido</strong>: <span><?php echo htmlspecialchars($usuario['apellido']); ?></span></p>
-                                        <p><strong>Correo Electrónico</strong>: <span><?php echo htmlspecialchars($usuario['email']); ?></span></p>
-                                        <p><strong>Fecha de Registro</strong>: <span><?php echo htmlspecialchars($usuario['fecha_registro']); ?></span></p>
+                                        <p><strong>Correo Electrónico</strong>: <span><?php echo htmlspecialchars($usuario['correo']); ?></span></p>
+                                        <p><strong>telefono</strong>: <span><?php echo htmlspecialchars($usuario['telefono']); ?></span></p>
                                     </div>
                                 </div>
                             </div>

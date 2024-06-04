@@ -25,16 +25,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 exit;
             } else {
                 // Usuario no encontrado, manejar error
-                echo 'Inicio de sesión fallido';
+                echo '<p class="alert alert-danger">Inicio de sesión fallido</p>';
             }
         } catch (PDOException $e) {
             // Manejar errores potenciales
             echo 'Error de base de datos: ' . $e->getMessage();
         }
     } else {
-        echo 'Por favor, complete ambos campos: email y contraseña.';
+        echo '<p class="alert alert-danger">Por favor, complete ambos campos: email y contraseña.</p>';
     }
 } else {
-    echo 'Método de solicitud no válido.';
+    echo '<p class="alert alert-danger">Método de solicitud no válido.</p>';
 }
 ?>

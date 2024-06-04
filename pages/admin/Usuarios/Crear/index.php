@@ -31,7 +31,7 @@ $roles = $stmt->fetchAll();
                 <div class="container d-flex justify-content-center align-items-center">
                     <div class="row border border-1 rounded-4 m-5">
                         <div class="col-12 m-2">
-                            <form class="text-center" action="op_crear_usuario.php" method="post">
+                            <form class="text-center" action="op_crear_usuario.php" method="post" enctype="multipart/form-data">
 
                                 <div class="mb-3 me-3">
                                     <label class="form-label" for="usuario">Usuario:</label>
@@ -61,6 +61,11 @@ $roles = $stmt->fetchAll();
                                 <div class="mb-3 me-3">
                                     <label class="form-label" for="telefono">Teléfono:</label>
                                     <input class="form-control" type="text" name="telefono" id="telefono">
+                                </div>
+
+                                <div class="mb-3 me-3">
+                                    <label class="form-label" for="Image">Subir Imagen</label>
+                                    <input class="form-control" type="file" name="fileImage" id="FileImage" required>
                                 </div>
 
                                 <div class="mb-3 me-3">

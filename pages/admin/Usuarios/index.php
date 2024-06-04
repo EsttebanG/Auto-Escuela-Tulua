@@ -47,6 +47,7 @@ $usuarios = $stmt->fetchAll();
                                             <th>Correo</th>
                                             <th>Teléfono</th>
                                             <th>Rol</th>
+                                            <th>Foto</th>
                                             <th>Acciones</th>
                                         </tr>
                                         <?php foreach ($usuarios as $usuario) : ?>
@@ -58,6 +59,7 @@ $usuarios = $stmt->fetchAll();
                                                 <td><?= htmlspecialchars($usuario['correo']) ?></td>
                                                 <td><?= htmlspecialchars($usuario['telefono']) ?></td>
                                                 <td><?= htmlspecialchars($usuario['rol_nombre']) ?></td>
+                                                <td><img class="img img-thumbnail col-6" src="/Auto-Escuela-Tulua/img/Usuario/<?php echo htmlspecialchars($usuario['usuario_img_name']); ?>" alt="<?php echo htmlspecialchars($usuario['usuario_img_name']); ?>"/><?php echo htmlspecialchars($usuario['usuario_img_name']); ?></td>
                                                 <td>
                                                     <a class="btn btn-warning m-lg-2 m-ss-2" href="actualizar/?id=<?= $usuario['cedula'] ?>">Actualizar</a>
                                                     <a class="btn btn-warning m-lg-2 m-ss-2" href="Eliminar/?id=<?= $usuario['cedula'] ?>">Eliminar</a>
