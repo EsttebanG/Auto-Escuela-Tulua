@@ -4,7 +4,7 @@ require '../../../../assets/config/db.php';
 
 $id = $_GET['id'];
 
-$sql = "DELETE FROM usuario WHERE idUsuario = ?";
+$sql = "DELETE FROM usuario WHERE cedula = ?";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$id]);
 

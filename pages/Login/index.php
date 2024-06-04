@@ -17,12 +17,9 @@
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="row border border-1 rounded-2 m-5">
                     <div class="col-12 m-2">
-                        <form class="text-center" action="" method="post">
-
-                            <?php include("op_login.php"); ?>
-
-                            <div class="mb-3 me-3 mx-auto ">
-                                <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                        <form class="text-center" action="op_login.php" method="post">
+                            <div class="mb-3 me-3 mx-auto">
+                                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
                                 <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
                             </div>
@@ -40,9 +37,10 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center align-items-center m-3">
-                                <input name="btningresar" type="submit" class="btn btn-warning" value=" Iniciar Secion">
+                                <input name="btningresar" type="submit" class="btn btn-warning" value="Iniciar Sesión">
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
