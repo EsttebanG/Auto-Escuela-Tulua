@@ -20,8 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Verificar si el usuario existe
             if ($usuario) {
                 // Usuario encontrado, redirigir a la página usuarios.php con el ID del usuario
-                $idUsuario = $usuario['cedula'];
-                header("Location: ../Usuario/?id=$idUsuario");
+                $cedula = $usuario['cedula'];
+                header("Location: redirect.php?id=$cedula");
                 exit;
             } else {
                 // Usuario no encontrado, manejar error
